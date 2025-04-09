@@ -1,4 +1,6 @@
--- Create clinics table
+--liquibase formatted sql
+--changeset Abhishek :1
+
 CREATE TABLE clinics (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -6,34 +8,40 @@ CREATE TABLE clinics (
     address VARCHAR(500),
     email VARCHAR(255),
     phone VARCHAR(20),
+    is_deleted BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
--- Create roles table
 CREATE TABLE roles (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL UNIQUE
 );
 
--- Create users table
+INSERT INTO roles (name) VALUES
+('SYSTEM_ADMIN'),
+('CLINIC_ADMIN'),
+('DOCTOR'),
+('NURSE'),
+('RECEPTIONIST'),
+('LAB_TECHNICIAN'),
+('PHARMACIST');
+
 CREATE TABLE users (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    clinic_id BIGINT NOT NULL,
+    clinic_id BIGINT,
     username VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     first_name VARCHAR(100),
     last_name VARCHAR(100),
     email VARCHAR(255),
     phone VARCHAR(20),
-    role_id BIGINT,
+    is_deleted BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (clinic_id) REFERENCES clinics(id),
-    FOREIGN KEY (role_id) REFERENCES roles(id)
+    FOREIGN KEY (clinic_id) REFERENCES clinics(id)
 );
 
--- Create user_roles table (many-to-many)
 CREATE TABLE user_roles (
     user_id BIGINT NOT NULL,
     role_id BIGINT NOT NULL,
@@ -42,7 +50,6 @@ CREATE TABLE user_roles (
     FOREIGN KEY (role_id) REFERENCES roles(id)
 );
 
--- Create departments table
 CREATE TABLE departments (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     clinic_id BIGINT NOT NULL,
@@ -51,7 +58,6 @@ CREATE TABLE departments (
     FOREIGN KEY (clinic_id) REFERENCES clinics(id)
 );
 
--- Create doctors table
 CREATE TABLE doctors (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     clinic_id BIGINT NOT NULL,
@@ -65,7 +71,6 @@ CREATE TABLE doctors (
     FOREIGN KEY (department_id) REFERENCES departments(id)
 );
 
--- Create patients table
 CREATE TABLE patients (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     clinic_id BIGINT NOT NULL,
@@ -81,7 +86,6 @@ CREATE TABLE patients (
     FOREIGN KEY (clinic_id) REFERENCES clinics(id)
 );
 
--- Create appointments table
 CREATE TABLE appointments (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     clinic_id BIGINT NOT NULL,
@@ -96,7 +100,6 @@ CREATE TABLE appointments (
     FOREIGN KEY (doctor_id) REFERENCES doctors(id)
 );
 
--- Create audit_logs table
 CREATE TABLE audit_logs (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     clinic_id BIGINT NOT NULL,
