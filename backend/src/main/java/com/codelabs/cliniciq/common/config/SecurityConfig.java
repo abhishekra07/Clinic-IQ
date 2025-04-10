@@ -1,6 +1,5 @@
 package com.codelabs.cliniciq.common.config;
 
-import com.codelabs.cliniciq.common.security.jwt.JwtAuthenticationFilter;
 import com.codelabs.cliniciq.core.user.service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -27,6 +26,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/actuator/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .userDetailsService(userDetailsService)

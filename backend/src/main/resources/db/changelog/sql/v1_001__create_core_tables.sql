@@ -50,64 +50,29 @@ CREATE TABLE user_roles (
     FOREIGN KEY (role_id) REFERENCES roles(id)
 );
 
-CREATE TABLE departments (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    clinic_id BIGINT NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    description VARCHAR(255),
-    FOREIGN KEY (clinic_id) REFERENCES clinics(id)
-);
-
 CREATE TABLE doctors (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     clinic_id BIGINT NOT NULL,
-    user_id BIGINT NOT NULL,
-    department_id BIGINT,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
     specialization VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (clinic_id) REFERENCES clinics(id),
-    FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (department_id) REFERENCES departments(id)
-);
-
-CREATE TABLE patients (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    clinic_id BIGINT NOT NULL,
-    first_name VARCHAR(100) NOT NULL,
-    last_name VARCHAR(100),
-    dob DATE,
-    gender VARCHAR(10),
-    email VARCHAR(255),
     phone VARCHAR(20),
-    address VARCHAR(500),
+    email VARCHAR(255),
+    gender VARCHAR(20),
+    date_of_birth DATE,
+	nationality VARCHAR(100),
+    image_url VARCHAR(500),
+    language_spoken VARCHAR(255),
+    telemedicine_enabled BOOLEAN DEFAULT FALSE,
+    video_consult_url VARCHAR(500),
+    bio TEXT,
+    license_number VARCHAR(100),
+    license_issuing_authority VARCHAR(255),
+    qualifications TEXT,
+    years_of_experience INT,
+    address TEXT,
+    is_deleted BOOLEAN NOT NULL DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (clinic_id) REFERENCES clinics(id)
-);
-
-CREATE TABLE appointments (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    clinic_id BIGINT NOT NULL,
-    patient_id BIGINT NOT NULL,
-    doctor_id BIGINT NOT NULL,
-    appointment_time TIMESTAMP NOT NULL,
-    status VARCHAR(50) DEFAULT 'SCHEDULED',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (clinic_id) REFERENCES clinics(id),
-    FOREIGN KEY (patient_id) REFERENCES patients(id),
-    FOREIGN KEY (doctor_id) REFERENCES doctors(id)
-);
-
-CREATE TABLE audit_logs (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    clinic_id BIGINT NOT NULL,
-    user_id BIGINT,
-    action VARCHAR(255),
-    entity VARCHAR(100),
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    details TEXT,
-    FOREIGN KEY (clinic_id) REFERENCES clinics(id),
-    FOREIGN KEY (user_id) REFERENCES users(id)
 );

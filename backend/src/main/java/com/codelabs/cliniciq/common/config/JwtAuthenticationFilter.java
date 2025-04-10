@@ -1,5 +1,6 @@
-package com.codelabs.cliniciq.common.security.jwt;
+package com.codelabs.cliniciq.common.config;
 
+import com.codelabs.cliniciq.common.security.jwt.JwtService;
 import com.codelabs.cliniciq.core.user.service.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

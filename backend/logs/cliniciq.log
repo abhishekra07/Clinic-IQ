@@ -1,0 +1,512 @@
+2025-04-10 12:35:59.673 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 12:35:59.749 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 10396 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 12:35:59.751 [main] DEBUG [] c.c.cliniciq.CliniciqApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-10 12:35:59.752 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 12:36:01.117 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 12:36:01.228 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2025-04-10 12:36:02.201 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 12:36:02.215 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 12:36:02.218 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 12:36:02.219 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 12:36:02.293 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 12:36:02.293 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2484 ms
+2025-04-10 12:36:02.694 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 12:36:03.070 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68c4db77
+2025-04-10 12:36:03.073 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 12:36:03.900 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 12:36:03.938 [main] INFO  [] liquibase.ui - Database is up to date, no changesets to execute
+2025-04-10 12:36:03.941 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 12:36:03.950 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 12:36:03.950 [main] INFO  [] liquibase.util - Run:                          0
+2025-04-10 12:36:03.950 [main] INFO  [] liquibase.util - Previously run:               1
+2025-04-10 12:36:03.950 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 12:36:03.950 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 12:36:03.950 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 12:36:03.951 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 12:36:03.952 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 12:36:04.062 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 12:36:04.137 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 12:36:04.200 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 12:36:04.511 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 12:36:04.605 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 12:36:05.798 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 12:36:05.802 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 12:36:06.222 [main] DEBUG [] c.c.c.c.c.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-04-10 12:36:06.225 [main] DEBUG [] c.c.cliniciq.common.config.MdcFilter - Filter 'mdcFilter' configured for use
+2025-04-10 12:36:06.313 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 12:36:06.457 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 12:36:06.987 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 12:36:07.586 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 12:36:07.612 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 12:36:07.626 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 8.706 seconds (process running for 9.256)
+2025-04-10 12:36:14.918 [http-nio-8082-exec-2] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 12:36:14.918 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 12:36:14.919 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-10 12:36:15.101 [http-nio-8082-exec-2] INFO  [fc61e3e8-50ee-4c14-aed7-469439683650] c.c.c.c.a.controller.AuthController - Login request received for user: johndoe
+2025-04-10 12:36:15.101 [http-nio-8082-exec-2] DEBUG [fc61e3e8-50ee-4c14-aed7-469439683650] c.c.c.core.auth.service.AuthService - Authenticating user: johndoe
+2025-04-10 12:36:15.571 [http-nio-8082-exec-2] DEBUG [fc61e3e8-50ee-4c14-aed7-469439683650] c.c.c.core.auth.service.AuthService - Authentication successful for user: johndoe
+2025-04-10 12:36:15.630 [http-nio-8082-exec-2] INFO  [fc61e3e8-50ee-4c14-aed7-469439683650] c.c.c.core.auth.service.AuthService - Tokens generated for user: johndoe
+2025-04-10 12:36:15.632 [http-nio-8082-exec-2] INFO  [fc61e3e8-50ee-4c14-aed7-469439683650] c.c.c.c.a.controller.AuthController - Login successful for user: johndoe
+2025-04-10 12:36:37.751 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 12:36:37.815 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 12:36:37.821 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 12:36:37.823 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 12:36:37.832 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 12:36:39.846 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 12:36:39.929 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 576 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 12:36:39.931 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 12:36:41.287 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 12:36:41.387 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2025-04-10 12:36:42.572 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 12:36:42.591 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 12:36:42.594 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 12:36:42.594 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 12:36:42.666 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 12:36:42.666 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2673 ms
+2025-04-10 12:36:43.105 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 12:36:43.546 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72f35a31
+2025-04-10 12:36:43.550 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 12:36:44.446 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 12:36:44.484 [main] INFO  [] liquibase.ui - Database is up to date, no changesets to execute
+2025-04-10 12:36:44.487 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 12:36:44.497 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 12:36:44.497 [main] INFO  [] liquibase.util - Run:                          0
+2025-04-10 12:36:44.497 [main] INFO  [] liquibase.util - Previously run:               1
+2025-04-10 12:36:44.497 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 12:36:44.497 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 12:36:44.497 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 12:36:44.498 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 12:36:44.499 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 12:36:44.673 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 12:36:44.760 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 12:36:44.817 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 12:36:45.176 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 12:36:45.291 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 12:36:46.765 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 12:36:46.769 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 12:36:47.326 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 12:36:47.467 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 12:36:48.041 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 12:36:48.656 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 12:36:48.680 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 12:36:48.693 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 9.524 seconds (process running for 10.147)
+2025-04-10 12:36:51.645 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 12:36:51.646 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 12:36:51.648 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-04-10 12:36:51.829 [http-nio-8082-exec-1] INFO  [b815120e-6b57-4261-8193-c4c5d64326bf] c.c.c.c.a.controller.AuthController - Login request received for user: johndoe
+2025-04-10 12:36:52.292 [http-nio-8082-exec-1] INFO  [b815120e-6b57-4261-8193-c4c5d64326bf] c.c.c.core.auth.service.AuthService - Tokens generated for user: johndoe
+2025-04-10 12:36:52.293 [http-nio-8082-exec-1] INFO  [b815120e-6b57-4261-8193-c4c5d64326bf] c.c.c.c.a.controller.AuthController - Login successful for user: johndoe
+2025-04-10 12:37:14.933 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 12:37:14.994 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 12:37:15.000 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 12:37:15.002 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 12:37:15.014 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 14:22:59.035 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 14:22:59.118 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 2472 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 14:22:59.120 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 14:23:00.460 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 14:23:00.559 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+2025-04-10 14:23:01.642 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 14:23:01.653 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:23:01.655 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 14:23:01.655 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 14:23:01.738 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 14:23:01.739 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2562 ms
+2025-04-10 14:23:02.158 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 14:23:02.554 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72f35a31
+2025-04-10 14:23:02.557 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 14:23:03.428 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:23:03.481 [main] INFO  [] liquibase.ui - Database is up to date, no changesets to execute
+2025-04-10 14:23:03.485 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:23:03.494 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 14:23:03.495 [main] INFO  [] liquibase.util - Run:                          0
+2025-04-10 14:23:03.495 [main] INFO  [] liquibase.util - Previously run:               1
+2025-04-10 14:23:03.495 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 14:23:03.495 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 14:23:03.495 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 14:23:03.496 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 14:23:03.498 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 14:23:03.628 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 14:23:03.711 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 14:23:03.762 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 14:23:04.112 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 14:23:04.208 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 14:23:05.413 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 14:23:05.416 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:23:06.167 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 14:23:06.550 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 14:23:07.876 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 14:23:09.279 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:23:09.339 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 14:23:09.376 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 11.055 seconds (process running for 11.599)
+2025-04-10 14:23:19.605 [http-nio-8082-exec-2] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 14:23:19.606 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 14:23:19.608 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-04-10 14:23:19.821 [http-nio-8082-exec-2] INFO  [25d43be3-faf2-4195-8783-df039514b218] c.c.c.c.a.controller.AuthController - Login request received for user: johndoe
+2025-04-10 14:23:20.213 [http-nio-8082-exec-2] INFO  [25d43be3-faf2-4195-8783-df039514b218] c.c.c.core.auth.service.AuthService - Tokens generated for user: johndoe
+2025-04-10 14:23:20.215 [http-nio-8082-exec-2] INFO  [25d43be3-faf2-4195-8783-df039514b218] c.c.c.c.a.controller.AuthController - Login successful for user: johndoe
+2025-04-10 14:24:02.676 [http-nio-8082-exec-4] INFO  [caf8542c-0013-40a2-b133-20bea1dc6678] c.c.c.c.c.c.ClinicController - Creating clinic with code: apollo001
+2025-04-10 14:24:02.824 [http-nio-8082-exec-4] INFO  [caf8542c-0013-40a2-b133-20bea1dc6678] c.c.c.c.c.service.ClinicServiceImpl - Clinic created with ID: 1
+2025-04-10 14:24:22.566 [http-nio-8082-exec-5] INFO  [464ec5b4-4f44-4ce1-a693-c8bde86101c3] c.c.c.c.d.c.DoctorController - Received request to create doctor
+2025-04-10 14:24:22.568 [http-nio-8082-exec-5] INFO  [464ec5b4-4f44-4ce1-a693-c8bde86101c3] c.c.c.c.doctor.service.DoctorService - Creating doctor for clinicId 1
+2025-04-10 14:24:22.617 [http-nio-8082-exec-5] WARN  [464ec5b4-4f44-4ce1-a693-c8bde86101c3] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+2025-04-10 14:24:22.617 [http-nio-8082-exec-5] ERROR [464ec5b4-4f44-4ce1-a693-c8bde86101c3] o.h.e.jdbc.spi.SqlExceptionHelper - Unknown column 'email' in 'field list'
+2025-04-10 14:24:39.940 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 14:24:40.007 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 14:24:40.013 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:24:40.016 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 14:24:40.029 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 14:43:22.263 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 14:43:22.336 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 15224 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 14:43:22.339 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 14:43:23.612 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 14:43:23.728 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2025-04-10 14:43:24.708 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 14:43:24.725 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:43:24.727 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 14:43:24.727 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 14:43:24.804 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 14:43:24.805 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2416 ms
+2025-04-10 14:43:25.199 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 14:43:25.607 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@720c8f80
+2025-04-10 14:43:25.610 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 14:43:26.252 [main] INFO  [] liquibase.changelog - Creating database history table with name: cliniciq.databasechangelog
+2025-04-10 14:43:26.402 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:43:26.519 [main] INFO  [] liquibase.lockservice - Successfully acquired change log lock
+2025-04-10 14:43:26.521 [main] INFO  [] liquibase.command - Using deploymentId: 4276406521
+2025-04-10 14:43:26.524 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:43:26.543 [main] INFO  [] liquibase.ui - Running Changeset: db/changelog/sql/v1_001__create_core_tables.sql::1::Abhishek 
+2025-04-10 14:43:26.789 [main] INFO  [] liquibase.changelog - Custom SQL executed
+2025-04-10 14:43:26.793 [main] INFO  [] liquibase.changelog - ChangeSet db/changelog/sql/v1_001__create_core_tables.sql::1::Abhishek  ran successfully in 247ms
+2025-04-10 14:43:26.810 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 14:43:26.810 [main] INFO  [] liquibase.util - Run:                          1
+2025-04-10 14:43:26.810 [main] INFO  [] liquibase.util - Previously run:               0
+2025-04-10 14:43:26.810 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 14:43:26.810 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 14:43:26.810 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 14:43:26.811 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 14:43:26.814 [main] INFO  [] liquibase.command - Update command completed successfully.
+2025-04-10 14:43:26.814 [main] INFO  [] liquibase.ui - Liquibase: Update has been successful. Rows affected: 8
+2025-04-10 14:43:26.821 [main] INFO  [] liquibase.lockservice - Successfully released change log lock
+2025-04-10 14:43:26.823 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 14:43:26.957 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 14:43:27.017 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 14:43:27.064 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 14:43:27.412 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 14:43:27.522 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 14:43:28.669 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 14:43:28.672 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:43:29.215 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 14:43:29.415 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 14:43:29.941 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 14:43:30.546 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:43:30.572 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 14:43:30.588 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 8.991 seconds (process running for 9.514)
+2025-04-10 14:44:45.754 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 14:44:45.754 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 14:44:45.757 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-04-10 14:44:45.969 [http-nio-8082-exec-1] INFO  [34cb0f45-3766-4a66-b915-79eab12d3701] c.c.c.c.a.controller.AuthController - Login request received for user: johndoe
+2025-04-10 14:44:46.402 [http-nio-8082-exec-1] INFO  [34cb0f45-3766-4a66-b915-79eab12d3701] c.c.c.core.auth.service.AuthService - Tokens generated for user: johndoe
+2025-04-10 14:44:46.403 [http-nio-8082-exec-1] INFO  [34cb0f45-3766-4a66-b915-79eab12d3701] c.c.c.c.a.controller.AuthController - Login successful for user: johndoe
+2025-04-10 14:44:53.468 [http-nio-8082-exec-3] INFO  [e8bce641-6137-467c-b1ef-0e54b3256875] c.c.c.c.c.c.ClinicController - Creating clinic with code: apollo001
+2025-04-10 14:44:53.581 [http-nio-8082-exec-3] INFO  [e8bce641-6137-467c-b1ef-0e54b3256875] c.c.c.c.c.service.ClinicServiceImpl - Clinic created with ID: 1
+2025-04-10 14:52:51.437 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 14:52:51.500 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 14:52:51.507 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:52:51.509 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 14:52:51.521 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 14:55:36.708 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 14:55:36.780 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 11452 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 14:55:36.781 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 14:55:38.061 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 14:55:38.175 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2025-04-10 14:55:39.242 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 14:55:39.254 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:55:39.256 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 14:55:39.256 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 14:55:39.338 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 14:55:39.338 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2510 ms
+2025-04-10 14:55:39.716 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 14:55:40.098 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77a9ac36
+2025-04-10 14:55:40.103 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 14:55:40.944 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:55:40.987 [main] INFO  [] liquibase.ui - Database is up to date, no changesets to execute
+2025-04-10 14:55:40.994 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:55:41.010 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 14:55:41.010 [main] INFO  [] liquibase.util - Run:                          0
+2025-04-10 14:55:41.010 [main] INFO  [] liquibase.util - Previously run:               1
+2025-04-10 14:55:41.011 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 14:55:41.011 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 14:55:41.011 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 14:55:41.012 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 14:55:41.013 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 14:55:41.184 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 14:55:41.274 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 14:55:41.316 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 14:55:41.648 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 14:55:41.740 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 14:55:42.975 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 14:55:42.979 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:55:43.492 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 14:55:43.670 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 14:55:44.270 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 14:55:44.911 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:55:44.943 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 14:55:44.959 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 8.905 seconds (process running for 9.447)
+2025-04-10 14:55:55.774 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 14:55:55.774 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 14:55:55.775 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-10 14:55:56.523 [http-nio-8082-exec-1] INFO  [5b2dfa73-287d-4eec-aa8c-209e6aa4a323] c.c.c.c.d.c.DoctorController - Received request to create doctor
+2025-04-10 14:55:56.531 [http-nio-8082-exec-1] INFO  [5b2dfa73-287d-4eec-aa8c-209e6aa4a323] c.c.c.c.doctor.service.DoctorService - Creating doctor for clinicId 1
+2025-04-10 14:55:56.604 [http-nio-8082-exec-1] INFO  [5b2dfa73-287d-4eec-aa8c-209e6aa4a323] c.c.c.c.doctor.service.DoctorService - Doctor created with id 1
+2025-04-10 14:56:24.305 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 14:56:24.367 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 14:56:24.373 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:56:24.376 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 14:56:24.389 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 14:58:03.486 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 14:58:03.563 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 17380 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 14:58:03.565 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 14:58:04.944 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 14:58:05.068 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 4 JPA repository interfaces.
+2025-04-10 14:58:06.267 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 14:58:06.286 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:58:06.289 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 14:58:06.290 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 14:58:06.411 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 14:58:06.411 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2785 ms
+2025-04-10 14:58:06.921 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 14:58:07.339 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ceb11f9
+2025-04-10 14:58:07.343 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 14:58:08.177 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:58:08.230 [main] INFO  [] liquibase.ui - Database is up to date, no changesets to execute
+2025-04-10 14:58:08.233 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:58:08.244 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 14:58:08.244 [main] INFO  [] liquibase.util - Run:                          0
+2025-04-10 14:58:08.244 [main] INFO  [] liquibase.util - Previously run:               1
+2025-04-10 14:58:08.244 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 14:58:08.244 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 14:58:08.244 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 14:58:08.246 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 14:58:08.249 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 14:58:08.475 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 14:58:08.562 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 14:58:08.621 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 14:58:09.029 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 14:58:09.129 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 14:58:10.490 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 14:58:10.497 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:58:11.094 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 14:58:11.292 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 14:58:11.886 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 14:58:12.639 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:58:12.663 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 14:58:12.677 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 9.936 seconds (process running for 10.481)
+2025-04-10 14:58:18.476 [http-nio-8082-exec-2] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 14:58:18.477 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 14:58:18.479 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-10 14:58:27.818 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 14:58:27.875 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 14:58:27.881 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:58:27.883 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 14:58:27.895 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 14:58:35.413 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 14:58:35.495 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 15164 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 14:58:35.496 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 14:58:36.882 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 14:58:37.014 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 4 JPA repository interfaces.
+2025-04-10 14:58:37.993 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 14:58:38.009 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:58:38.011 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 14:58:38.011 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 14:58:38.085 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 14:58:38.085 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2526 ms
+2025-04-10 14:58:38.470 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 14:58:38.842 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@749f61a3
+2025-04-10 14:58:38.845 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 14:58:39.642 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:58:39.683 [main] INFO  [] liquibase.ui - Database is up to date, no changesets to execute
+2025-04-10 14:58:39.686 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 14:58:39.695 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 14:58:39.695 [main] INFO  [] liquibase.util - Run:                          0
+2025-04-10 14:58:39.695 [main] INFO  [] liquibase.util - Previously run:               1
+2025-04-10 14:58:39.695 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 14:58:39.695 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 14:58:39.695 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 14:58:39.696 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 14:58:39.697 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 14:58:39.837 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 14:58:39.926 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 14:58:39.971 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 14:58:40.292 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 14:58:40.397 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 14:58:41.603 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 14:58:41.607 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 14:58:42.128 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 14:58:42.300 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 14:58:42.799 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 14:58:43.413 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 14:58:43.437 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 14:58:43.450 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 8.716 seconds (process running for 9.255)
+2025-04-10 14:59:05.246 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 14:59:05.247 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 14:59:05.250 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-04-10 14:59:06.271 [http-nio-8082-exec-1] INFO  [f4252b8d-7517-4d3e-ad18-69b4cb445f71] c.c.c.c.d.c.DoctorController - Received search request for doctors with pagination: page 0, size 10
+2025-04-10 14:59:06.273 [http-nio-8082-exec-1] INFO  [f4252b8d-7517-4d3e-ad18-69b4cb445f71] c.c.c.c.doctor.service.DoctorService - Searching doctors with filters: DoctorSearchRequest(firstName=Amit, lastName=null, specialty=null, clinicId=null, page=0, size=10)
+2025-04-10 14:59:06.414 [http-nio-8082-exec-1] WARN  [f4252b8d-7517-4d3e-ad18-69b4cb445f71] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-04-10 14:59:52.177 [http-nio-8082-exec-3] INFO  [2176f8b3-6f18-47a1-904d-6ac977dc4d18] c.c.c.c.d.c.DoctorController - Received search request for doctors with pagination: page 0, size 10
+2025-04-10 14:59:52.177 [http-nio-8082-exec-3] INFO  [2176f8b3-6f18-47a1-904d-6ac977dc4d18] c.c.c.c.doctor.service.DoctorService - Searching doctors with filters: DoctorSearchRequest(firstName=Amit, lastName=Verma, specialty=Cardiology, clinicId=1, page=0, size=10)
+2025-04-10 15:00:51.421 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 15:00:51.488 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 15:00:51.500 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 15:00:51.504 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 15:00:51.517 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 15:00:55.094 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 15:00:55.198 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 23340 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 15:00:55.202 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 15:00:56.587 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 15:00:56.735 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131 ms. Found 4 JPA repository interfaces.
+2025-04-10 15:00:57.775 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 15:00:57.787 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 15:00:57.789 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 15:00:57.789 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 15:00:57.865 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 15:00:57.866 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2607 ms
+2025-04-10 15:00:58.296 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 15:00:58.751 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12266084
+2025-04-10 15:00:58.754 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 15:00:59.867 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 15:00:59.931 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 15:00:59.985 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 15:01:00.316 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 15:01:00.419 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 15:01:01.528 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 15:01:01.537 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 15:01:02.081 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 15:01:02.260 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 15:01:02.819 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 15:01:03.458 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 15:01:03.476 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 9.093 seconds (process running for 9.674)
+2025-04-10 15:01:03.480 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 15:01:03.571 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 15:01:03.577 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 15:01:03.580 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 15:01:03.590 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-10 15:01:25.600 [background-preinit] INFO  [] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 15:01:25.665 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Starting CliniciqApplication using Java 17.0.12 with PID 17092 (C:\Github Codebase\Clinic-IQ\backend\target\classes started by Abhishek in C:\Github Codebase\Clinic-IQ\backend)
+2025-04-10 15:01:25.667 [main] INFO  [] c.c.cliniciq.CliniciqApplication - The following 1 profile is active: "local"
+2025-04-10 15:01:26.940 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 15:01:27.068 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 4 JPA repository interfaces.
+2025-04-10 15:01:28.093 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-04-10 15:01:28.108 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-04-10 15:01:28.110 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-10 15:01:28.110 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 15:01:28.189 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-10 15:01:28.190 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2471 ms
+2025-04-10 15:01:28.582 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-10 15:01:28.947 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45dc7be
+2025-04-10 15:01:28.950 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-10 15:01:29.707 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 15:01:29.752 [main] INFO  [] liquibase.ui - Database is up to date, no changesets to execute
+2025-04-10 15:01:29.755 [main] INFO  [] liquibase.changelog - Reading from cliniciq.databasechangelog
+2025-04-10 15:01:29.764 [main] INFO  [] liquibase.util - UPDATE SUMMARY
+2025-04-10 15:01:29.764 [main] INFO  [] liquibase.util - Run:                          0
+2025-04-10 15:01:29.764 [main] INFO  [] liquibase.util - Previously run:               1
+2025-04-10 15:01:29.764 [main] INFO  [] liquibase.util - Filtered out:                 0
+2025-04-10 15:01:29.764 [main] INFO  [] liquibase.util - -------------------------------
+2025-04-10 15:01:29.764 [main] INFO  [] liquibase.util - Total change sets:            1
+2025-04-10 15:01:29.765 [main] INFO  [] liquibase.util - Update summary generated
+2025-04-10 15:01:29.766 [main] INFO  [] liquibase.command - Command execution complete
+2025-04-10 15:01:29.874 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 15:01:29.944 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 15:01:30.001 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-10 15:01:30.305 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 15:01:30.400 [main] INFO  [] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 15:01:31.511 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 15:01:31.514 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 15:01:32.153 [main] INFO  [] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-10 15:01:32.358 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 15:01:33.000 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10 15:01:33.722 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-04-10 15:01:33.753 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-04-10 15:01:33.773 [main] INFO  [] c.c.cliniciq.CliniciqApplication - Started CliniciqApplication in 8.808 seconds (process running for 9.346)
+2025-04-10 15:01:59.472 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 15:01:59.473 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-10 15:01:59.474 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-10 15:01:59.945 [http-nio-8082-exec-1] INFO  [98437d38-e800-49aa-aa40-166ac021d116] c.c.c.c.d.c.DoctorController - Received search request for doctors with pagination: page 0, size 10
+2025-04-10 15:01:59.946 [http-nio-8082-exec-1] INFO  [98437d38-e800-49aa-aa40-166ac021d116] c.c.c.c.doctor.service.DoctorService - Searching doctors with filters: DoctorSearchRequest(firstName=Amit, lastName=Verma, specialization=Cardiology, clinicId=1, page=0, size=10)
+2025-04-10 15:02:00.030 [http-nio-8082-exec-1] WARN  [98437d38-e800-49aa-aa40-166ac021d116] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-04-10 15:10:49.030 [SpringApplicationShutdownHook] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-10 15:10:49.096 [tomcat-shutdown] INFO  [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-10 15:10:49.102 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 15:10:49.104 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-10 15:10:49.117 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
